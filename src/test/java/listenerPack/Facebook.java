@@ -1,8 +1,7 @@
 package listenerPack;
 
+import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,19 +9,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class Facebook {
 	
 	@Test
 	public void createAccount() {
 		
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.xpath("//a[starts-with(@id, 'u_0_0')]")).click();
 		driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("jawad");
 		driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("karim");
