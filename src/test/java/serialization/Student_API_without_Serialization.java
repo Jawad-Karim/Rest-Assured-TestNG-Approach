@@ -11,7 +11,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class Student_API_not_Serialization {
+public class Student_API_without_Serialization {
 	
 	public HashMap map = new HashMap();
 	
