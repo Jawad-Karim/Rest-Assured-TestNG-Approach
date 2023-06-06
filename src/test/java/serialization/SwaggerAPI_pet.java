@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.*;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement
 public class SwaggerAPI_pet implements Serializable {
-	  
+
 	private int id;
 	private int petId;
 	private int quantity;
@@ -55,9 +55,5 @@ public class SwaggerAPI_pet implements Serializable {
 	public String toString() {
 		return "SwaggerAPI_pet [id=" + this.id + ", petId=" + this.petId + ", quantity=" + this.quantity + ", shipDate=" + this.shipDate
 				+ ", status=" + status + ", complete=" + complete + "]";
-	}
-	
-	
-	
-	
+	}	
 }

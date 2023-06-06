@@ -1,10 +1,10 @@
 package complex_json_POST;
 
 public class MobileAutomation {
-	
+
 	private String courseTitle;
 	private int price;
-	
+
 	public String getCourseTitle() {
 		return courseTitle;
 	}
@@ -16,7 +16,5 @@ public class MobileAutomation {
 	}
 	public void setPrice(int price) {
 		this.price = price;
-	}
-	
-
+	}	
 }

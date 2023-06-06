@@ -17,6 +17,4 @@ public class WebAutomation {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
-
 }

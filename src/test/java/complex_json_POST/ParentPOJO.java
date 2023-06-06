@@ -1,14 +1,14 @@
 package complex_json_POST;
 
 public class ParentPOJO {
-	
+
 	private String instructor;
 	private String url;
 	private String services;
 	private String expertize;
 	private Courses courses;
 	private String linkedin;
-	
+
 	public String getInstructor() {
 		return instructor;
 	}
@@ -45,6 +45,4 @@ public class ParentPOJO {
 	public void setLinkedin(String linkedin) {
 		this.linkedin = linkedin;
 	}
-	
-
 }

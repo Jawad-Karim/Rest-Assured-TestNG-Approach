@@ -3,11 +3,11 @@ package complex_json_POST;
 import java.util.List;
 
 public class Courses {
-	
+
 	private List <WebAutomation> webAutomation;
 	private List <ApiAutomation> apiAutomation;
 	private List <MobileAutomation> mobileAutomation;
-	
+
 	public List<WebAutomation> getWebAutomation() {
 		return webAutomation;
 	}
@@ -25,8 +25,5 @@ public class Courses {
 	}
 	public void setMobileAutomation(List<MobileAutomation> mobileAutomation) {
 		this.mobileAutomation = mobileAutomation;
-	}
-	
-	
-
+	}	
 }

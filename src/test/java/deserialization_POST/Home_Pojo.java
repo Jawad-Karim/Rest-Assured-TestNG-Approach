@@ -3,7 +3,7 @@ package deserialization_POST;
 import java.util.List;
 
 public class Home_Pojo {
-	
+
 	/*{
 		  "id": 0,
 		  "category": {
@@ -22,14 +22,14 @@ public class Home_Pojo {
 		  ],
 		  "status": "available"
 		}*/
-	
+
 	private int id;
 	private CategoryPOJO category;
 	private String name;
 	private List<PhotoUrlPOJO> photoUrls;
 	private List <TagsPOJO> tags;
 	private String status;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -71,7 +71,4 @@ public class Home_Pojo {
 		return "Home [id=" + this.id + ", category=" + this.category + ", name=" + this.name + ", photoUrls=" + this.photoUrls + ", tags="
 				+ this.tags + ", status=" + this.status + "]";
 	}
-	
-	
-
 }

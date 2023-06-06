@@ -11,13 +11,11 @@ public class DataPOJO {
 //    "avatar": "https://reqres.in/img/faces/7-image.jpg"
 //	},
 
-
 	private int id;
 	private String email;
 	private String first_name;
 	private String last_name;
 	private String avatar;
-	
 	
 	public int getId() {
 		return id;

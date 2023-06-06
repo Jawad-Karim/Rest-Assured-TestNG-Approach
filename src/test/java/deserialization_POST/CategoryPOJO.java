@@ -1,10 +1,10 @@
 package deserialization_POST;
 
 public class CategoryPOJO {
-	
+
 	private int id;
 	private String name;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -21,7 +21,4 @@ public class CategoryPOJO {
 	public String toString() {
 		return "CategoryPOJO [id=" + this.id + ", name=" + this.name + "]";
 	}
-	
-	
-
 }

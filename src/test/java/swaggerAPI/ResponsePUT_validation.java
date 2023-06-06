@@ -57,28 +57,17 @@ public class ResponsePUT_validation extends ExtentReportsBase{
 		tagList.add(tagMap2);
 		// List for tagList................ end........
 		
+		// request body using HashMap
 		HashMap<Object, Object> map = new HashMap<Object, Object>();
-		map.put("id", "214");
-	
+		map.put("id", "214");			
+		map.put("category", categoryMap);			
+		map.put("name", "catty");				
+		map.put("photoUrls", urlList);				
+		map.put("tags", tagList);			
+		map.put("status", "Avaiable");			
 		
-		map.put("category", categoryMap);
-		
-		
-		map.put("name", "catty");
-		
-		
-		map.put("photoUrls", urlList);
-		
-		
-		map.put("tags", tagList);
-		
-		
-		map.put("status", "Avaiable");
-		
-		
-		
-		response = request.body(map).put("/v2/pet");
-	
+		//put the requst body
+		response = request.body(map).put("/v2/pet");	
 	}
 	
 	@Test(priority=1)
@@ -102,8 +91,7 @@ public class ResponsePUT_validation extends ExtentReportsBase{
 		logger = reports.createTest("test method "+i);
 		String contentEncoding = response.header("Content-Encoding");
 		System.out.println("contentEncoding : " +contentEncoding);
-		Assert.assertEquals(contentEncoding, null);
-		
+		Assert.assertEquals(contentEncoding, null);		
 	}
 	
 	@Test(priority=4)
@@ -142,8 +130,7 @@ public class ResponsePUT_validation extends ExtentReportsBase{
 	public void getResponseBody25() {
 		logger = reports.createTest("test method "+i);
 		String body = response.getBody().asPrettyString();
-		System.out.println("body : "+ body);
-		
+		System.out.println("body : "+ body);		
 		//Thread.sleep(2000);
 	}
 	
@@ -153,5 +140,4 @@ public class ResponsePUT_validation extends ExtentReportsBase{
 		response = request.delete("/v2/pet/101");
 		System.out.println("delete statusline : "+ response.statusLine());
 	}
-
 }

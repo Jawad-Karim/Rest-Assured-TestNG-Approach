@@ -1,7 +1,7 @@
 package deserialization_POST;
 
 public class PhotoUrlPOJO {
-	
+
 	private String catPhotoUrl;
 	private String dogPhotoUrl;
 	public String getCatPhotoUrl() {
@@ -16,6 +16,4 @@ public class PhotoUrlPOJO {
 	public void setDogPhotoUrl(String dogPhotoUrl) {
 		this.dogPhotoUrl = dogPhotoUrl;
 	}
-	
-
 }

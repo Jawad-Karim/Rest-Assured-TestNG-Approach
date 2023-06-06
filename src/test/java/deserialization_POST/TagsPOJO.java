@@ -22,7 +22,4 @@ public class TagsPOJO {
 	public String toString() {
 		return "TagsPOJO [id=" + this.id + ", name=" + this.name + "]";
 	}
-	
-	
-
 }
