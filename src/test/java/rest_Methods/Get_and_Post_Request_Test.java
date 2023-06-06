@@ -71,9 +71,13 @@ public class Get_and_Post_Request_Test {
 	@Test
 	public void post_method() {
 
+		//specify the base uri
 		RestAssured.baseURI = "https://reqres.in";
+		
+		//create http request
 		RequestSpecification httpRequest = RestAssured.given();
 
+		//specify the header
 		httpRequest.header("Content-type", "application/json");
 		//httpRequest.header("titile", "analyst");
 
