@@ -10,7 +10,7 @@ import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class TC001_Get_Request {
+public class Get_and_Post_Request_Test {
 	
 	//String baseUrl = "https://reqres.in/api/users";
 	
