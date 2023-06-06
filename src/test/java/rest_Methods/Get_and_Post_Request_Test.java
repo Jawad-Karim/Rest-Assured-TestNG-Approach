@@ -32,23 +32,25 @@ public class Get_and_Post_Request_Test {
 		Boolean b = prettyStringBody.contains("Michael");
 		System.out.println("boolean : "+b);
 		
-		//print response statusline
+		//veify response statusline and print
 		String statusline = response.getStatusLine();
 		System.out.println("statusline : "+ statusline);
 		Assert.assertEquals("HTTP/1.1 200 OK", statusline);
 		
-		//print response status code
+		//veify response status code and print
 		int statuscode = response.getStatusCode();
 		System.out.println("status code : "+ statuscode);
 		Assert.assertEquals(statuscode, 200);
 		
-		//print header 
+		//veify header content type
 		String headerContentType = response.header("Content-type");
 		Assert.assertEquals(headerContentType, "application/json; charset=utf-8");
 		
+		//veify header server
 		String headerServer = response.header("Server");
 		Assert.assertEquals(headerServer, "cloudflare");
 		
+		//veify header content encoding
 		String headerContentEncoding = response.header("Content-encoding");
 		Assert.assertEquals(headerContentEncoding, "gzip");
 		
