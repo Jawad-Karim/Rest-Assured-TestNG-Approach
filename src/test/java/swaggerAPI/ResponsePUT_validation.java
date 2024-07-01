@@ -29,19 +29,17 @@ public class ResponsePUT_validation extends ExtentReportsBase{
 		request.header("ContentType", "application/json");
 		request.contentType(ContentType.JSON);
 		
-		// map for category................. start.......
+		// map for category................. 
 		HashMap<Object, Object> categoryMap = new HashMap<Object, Object>();
 		categoryMap.put("id", 01);
 		categoryMap.put("name", "persian cat");
-		// map for category.................. end........
-
-		// List for urlList................ start........
+		
+		// List for urlList................ 
 		List <Object> urlList = new ArrayList<Object>();
 		urlList.add("http://persiancat.com");
 		urlList.add("http://persiancat.com");
-		// List for urlList................ end.........
-		
-		// maps for tags................ start.........
+				
+		// maps for tags................ 
 		HashMap<Object, Object> tagMap1 = new HashMap<Object, Object>();
 		tagMap1.put("id", "101");
 		tagMap1.put("name", "toni");
@@ -49,14 +47,12 @@ public class ResponsePUT_validation extends ExtentReportsBase{
 		HashMap<Object, Object> tagMap2 = new HashMap<Object, Object>();
 		tagMap2.put("id", "102");
 		tagMap2.put("name", "pony");
-		// maps for tags................ end........
-		
+				
 		// List for tagList................ start........
 		List <Object> tagList = new ArrayList<Object>();
 		tagList.add(tagMap1);
 		tagList.add(tagMap2);
-		// List for tagList................ end........
-		
+				
 		// request body using HashMap
 		HashMap<Object, Object> map = new HashMap<Object, Object>();
 		map.put("id", "214");			
